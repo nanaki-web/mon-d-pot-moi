@@ -1,0 +1,155 @@
+/* responsive */
+/* pour modifier des elements quand la taille de l'ecran est inférieur 768    */
+@media screen and (max-width: 768px) 
+{ 
+    #ban
+    {
+        flex-direction: column;
+        
+    }
+
+    #ban img
+    {
+        max-width:50%;
+        height:auto;
+        
+    }
+    aside
+    {
+        display:none;
+    }
+
+    section
+    {
+        width:100%;
+    }
+    /* table
+    {
+        display:none;
+    } */
+    /* tableau */
+    table tr
+    {
+        display: block;
+        margin-bottom: 40px
+    }
+    table td 
+    {
+        display: block;
+        text-align: right;
+    }
+    table td:before 
+    {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    table th
+    {
+        display: none;
+    }
+    table
+    {
+        
+        width:100%;
+    }
+
+} 
+/* pour modifier des elements quandla taille de l'ecran est superieur 768 */
+@media screen and (min-width: 768px) 
+{
+  nav ul 
+  {
+    display:flex;
+    
+  } 
+  section
+  {
+      width:70%
+  }
+  aside
+  {
+      width: 30%;
+  }
+
+
+
+}
+
+
+
+
+
+p 
+{ 
+    font-size : 1rem; 
+} 
+
+/* "pour toute les pages */
+html
+{
+    font-size:100%
+}
+
+/* exemple */
+h1 
+{ 
+    font-size : 3rem; 
+} 
+
+#ban
+{
+    display:flex;
+}
+
+/* image promotion */
+#img_promotion
+{   
+    width: 100%;
+    height: auto;
+}
+
+/* bordure nav */
+nav 
+{
+    border-style: solid ;
+    background-color: #000;
+    text-align:left;
+    margin-bottom: 5px;
+}
+
+/* enlever les puces */
+nav ul
+{ 
+    padding:1;
+    margin:1;
+    list-style-type: none;
+    
+}
+
+/* liens1 décaler les liens */
+/*  */a
+{
+    color: white ;
+    font-size:10pt;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+/* colonne */
+aside
+{
+    position: static;
+    border: 5px gray;
+    background-color:#404040;
+    width:30%;
+}
+
+/* faire la colonne droite */
+.colonne
+{
+    display: flex;
+    padding-bottom: 5px;
+}
+
+

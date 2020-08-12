@@ -9,25 +9,28 @@
      <!--entête de la page-->
      <header>
         <img src="img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou"><br>
-    <small>La qualité depuis 70 ans</small><br>
+        <div class="jardin">Tout le jardin</div>
+        <link rel="stylesheet" href="assets/css/style.css">
     </header>
-    <img src="img/promotion.jpg" alt="Logo promotion" title="Logo promotion"><br>
     <!--menu-->
     <nav>
-    <ul>
-        <li><a href="index.html" title="Accueil"> Accueil</a></li>
-        <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-        <li><a href="Contact.html" title="Contact">Contact</a></li>
-    </ul>
-    </nav>
+        <ul>
+            <li><a href="index.html" title="Accueil"> Accueil</a></li>
+            <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+            <li><a href="Contact.html" title="Contact">Contact</a></li>
+        </ul>
+        </nav>
+        <!-- promotion img -->
+    <img id="img_promotion" src="img/promotion.jpg" alt="Logo promotion" title="Logo promotion"><br>
+    <!-- faire tableau -->
     <form action="http://bienvu.net/script.php" method="POST">
         <fieldset>
             <legend>Coordonnées</legend>
          <label for="nom">Nom*:</label> 
          <!--les required a l'interieur des input-->
-         <input type="text" name="nom" id="nom" pattern="^[a-z]+$" required><br>
+         <input type="text" name="nom" id="nom" required><br>
          <label for="prénom">Votre prénom*:</label>
-        <input type="text" name="prénom" id="prénom" pattern="^[a-z]+$" required><br>
+        <input type="text" name="prénom" id="prénom" required><br>
         <!--pour mettre des boutons et mettre le required sur un seul bouton-->
 
          <input type="radio" name="sexe" value="Féminin"  required> féminin 
@@ -57,7 +60,7 @@
                     <option>Autres</option>
                 </select><br>
      <label for="question">Votre question*:</label><br> 
-     <textarea name="question" id="question" rows="10" cols="50"></textarea><br>
+     <textarea name="question" id="question" rows="10" cols="35"></textarea><br>
     <br>
     <!--bouton-->
     <input type="checkbox" name="cgu" id="cgu">
